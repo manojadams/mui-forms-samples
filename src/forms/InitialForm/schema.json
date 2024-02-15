@@ -1,0 +1,22 @@
+{
+    "fields": [
+        {
+            "name": "first_name",
+            "prop": "basic_details",
+            "meta": {
+                "displayName": "First name",
+                "displayType": "text_field",
+                "value": "Goku"
+            }
+        },
+        {
+            "name": "last_name",
+            "prop": "more_details#personal_details",
+            "meta": {
+                "displayName": "Last name",
+                "displayType": "text_field",
+                "value": "San"
+            }
+        }
+    ]
+}

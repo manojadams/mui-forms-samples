@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import MuiForms from "mui-forms";
-import registrtionSchema from "./schema.json";
+import registrtionSchema from "./schema-disable-tabs.json";
 
-function DefaultForm() {
+function RegistrationFormDisableTabs() {
     const [schema, setSchema] = useState(null);
 
     useEffect(() => {
@@ -15,15 +15,8 @@ function DefaultForm() {
                 schema &&
                     <MuiForms
                         className="s-form"
-                        config={{
-                            gapX: 10,
-                            gapY: 10
-                        }}
+                        sectionLayout="tabs"
                         schema={schema}
-                        changeResponseMode="form-data"
-                        onChange={(formData, allData) => {
-                            console.log(formData, allData);
-                        }}
                         onSubmit={() => {
                             // to do
                         }}
@@ -33,4 +26,4 @@ function DefaultForm() {
     )
 }
 
-export default DefaultForm;
+export default RegistrationFormDisableTabs;
