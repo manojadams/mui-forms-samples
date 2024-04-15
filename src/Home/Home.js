@@ -24,6 +24,9 @@ const forms = [{
 }, {
     path: "/initial-form-data",
     name: "Form with initial data"
+}, {
+    path: "/multi-search",
+    name: "Form with multi search items"
 }];
 
 const dynamicForms = [{

@@ -8,6 +8,7 @@ import RegistrationFormDisableTabs from "./forms/RegistrationForm/RegistrationFo
 import DisabledFieldForm from "./forms/RegistrationForm/DisabledFieldForm";
 import AddToCart from "./forms/AddToCart";
 import InitialForm from "./forms/InitialForm";
+import MultiSearch from "./forms/MultiSearch";
 
 export const ROUTES = [{
     path: "/",
@@ -39,5 +40,8 @@ export const ROUTES = [{
     }, {
         path: "initial-form-data",
         Component: InitialForm
+    }, {
+        path: "multi-search",
+        Component: MultiSearch
     }]
 }];

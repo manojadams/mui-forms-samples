@@ -24,8 +24,8 @@ function DefaultForm() {
                         onChange={(formData, allData) => {
                             console.log(formData, allData);
                         }}
-                        onSubmit={() => {
-                            // to do
+                        onSubmit={(data) => {
+                            console.log(data);
                         }}
                     />
             }
